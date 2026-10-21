@@ -12,9 +12,8 @@ import About from './components/About.jsx'
 import Photo from './components/Photo.jsx'
 import Split from './components/Split.jsx'
 import Footer from './components/Footer.jsx'
-import ScrollBand from './components/ScrollBand.jsx'
 import Divider from './components/Divider.jsx'
-import { SliceScene, CupScene } from './components/Scene.jsx'
+import SipToSlice from './components/SipToSlice.jsx'
 import MenuPage from './components/MenuPage.jsx'
 import AboutPage from './components/AboutPage.jsx'
 
@@ -35,14 +34,7 @@ function Home() {
         src="/images/main/toast.png"
         alt="Syrup poured over French toast"
       />
-      <ScrollBand rows={[['Fresh daily', 'Made with love', 'Pizza'], ['Coffee', 'Wine', 'Good company']]} />
-      <SliceScene>
-        <p className="tagline" data-scrub>Every Slice Tells a Story. Made fresh daily with premium ingredients.</p>
-      </SliceScene>
-      <Divider icon="heart" />
-      <CupScene>
-        <p className="scene-sign" data-scrub>Pull up a chair. The coffee is on us.</p>
-      </CupScene>
+      <SipToSlice />
     </main>
   )
 }
